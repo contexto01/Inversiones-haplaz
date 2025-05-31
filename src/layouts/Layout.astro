@@ -1,22 +1,37 @@
+---
+import NavBar from '../components/NavBar.astro'
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body
+    class="[background:radial-gradient(125%_125%_at_50%_10%,#0c101b_40%,#000_100%)] text-primary"
+  >
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <NavBar />
+      <slot />
+    </main>
+    <section class="text-center text-balance">
+      <h3 class="text-3xl font-bold mb-4">
+        Llevemos juntos tu negocio a la era <b class="text-tertiary">digital</b>
+      </h3>
+      <p>
+        Completa el formulario y conecta con nuestro equipo de expertos. Te acompañaremos paso
+        a paso para que accedas a soluciones confiables, rápidas y adaptadas a tu negocio.
+      </p>
+    </section>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html {
+    height: -webkit-fill-available;
+  }
 </style>

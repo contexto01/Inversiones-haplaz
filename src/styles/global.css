@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/outfit';
+
+@theme {
+  --color-primary: #fff;
+  --color-secondary: #0c101b;
+  --color-tertiary: #c8ff1e;
+}
+
+body {
+  font-family: 'Outfit Variable', sans-serif;
+}
