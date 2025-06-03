@@ -1,6 +1,10 @@
 ---
+import Moneyicon from '../icons/moneyicon.astro'
+import Transition from '../icons/transition.astro'
 import Layout from '../layouts/Layout.astro'
+import Cash from '../icons/cash.astro'
 import '../styles/global.css'
+import Coins from '../icons/coins.astro'
 ---
 
 <Layout>
@@ -14,7 +18,8 @@ import '../styles/global.css'
     optimizas tus costos para crecer sin límites.
   </p>
   <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">
-    <div>
+    <div class="">
+      <Moneyicon class="w-16 h-16 mb-2 text-balance text-tertiary" />
       <h4 class="text-xl font-semibold mb-2 text-balance">Pagos fáciles y confiables</h4>
       <p class="text-balance">
         Conecta tu negocio con proveedores y clientes a nivel global, usando nuestra
@@ -22,6 +27,7 @@ import '../styles/global.css'
       </p>
     </div>
     <div>
+      <Transition class="w-16 h-16 mb-2 text-balance text-tertiary" />
       <h4 class="text-xl font-semibold mb-2 text-balance">
         Transacciones rápidas y escalables
       </h4>
@@ -31,6 +37,7 @@ import '../styles/global.css'
       </p>
     </div>
     <div>
+      <Cash class="w-16 h-16 mb-2 text-balance text-tertiary" />
       <h4 class="text-xl font-semibold mb-2 text-balance">Precios estables y previsibles</h4>
       <p class="text-balance">
         Protegemos tus operaciones locales del impacto de la volatilidad en los mercados
@@ -38,6 +45,7 @@ import '../styles/global.css'
       </p>
     </div>
     <div>
+      <Coins class="w-16 h-16 mb-2 text-balance text-tertiary" />
       <h4 class="text-xl font-semibold mb-2 text-balance">Costos optimizados para crecer</h4>
       <p class="text-balance">
         Nuestra tecnología está diseñada para optimizar tus costos y ayudarte a escalar sin
