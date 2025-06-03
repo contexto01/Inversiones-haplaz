@@ -1,0 +1,61 @@
+---
+// Importa los íconos que usas en los beneficios
+import Contract from '../icons/contract.astro'
+import Fee from '../icons/fee.astro'
+import Security from '../icons/security.astro'
+import Automation from '../icons/automation.astro'
+
+// Componente BenefitItem
+// (Eliminado: la lógica se moverá al template Astro)
+
+// Lista de beneficios
+const benefits = [
+  {
+    icon: Contract,
+    title: 'Estricto Cumplimiento Normativo',
+    description:
+      'Implementamos un proceso de compliance riguroso, desde la etapa inicial y de forma continua, para garantizar la transparencia y el cumplimiento normativo.',
+    data_aos_delay: '100'
+  },
+  {
+    icon: Fee,
+    title: 'Tarifas Altamente Competitivas',
+    description: 'Ofrecemos tasas optimizadas que maximizan el valor para nuestros clientes.',
+    data_aos_delay: '200'
+  },
+  {
+    icon: Security,
+    title: 'Seguridad y Transparencia Total',
+    description:
+      'Garantizamos la finalización del 100% de las transacciones, brindando confianza en cada operación.',
+    data_aos_delay: '300'
+  },
+  {
+    icon: Automation,
+    title: 'Eficiencia Sin Demoras',
+    description:
+      'Contamos con un sistema ágil y confiable, que opera sin retrasos para asegurar rapidez y efectividad.',
+    data_aos_delay: '400'
+  }
+]
+---
+
+<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">
+  {
+    benefits.map(({ icon: Icon, title, description, data_aos_delay }) => (
+      <div
+        class="flex items-center border-l border-tertiary/50  p-4 gap-2  h-full"
+        data-aos="fade-right"
+        data-aos-delay={data_aos_delay}
+      >
+        <div class="items-center text-tertiary">
+          <Icon class="w-16 h-16 mx-auto mb-4" />
+        </div>
+        <div>
+          <h4 class="text-2xl font-bold">{title}</h4>
+          <p>{description}</p>
+        </div>
+      </div>
+    ))
+  }
+</article>
